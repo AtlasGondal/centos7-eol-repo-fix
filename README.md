@@ -17,7 +17,10 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
 2. **Download the Updated Repository File:**
 
    ```bash
-   sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/AtlasGondal/centos7-eol-repo-fix/main/CentOS-Base.repo
+   # use curl
+   sudo curl -fsSL https://raw.githubusercontent.com/AtlasGondal/centos7-eol-repo-fix/main/CentOS-Base.repo -o /etc/yum.repos.d/CentOS-Base.repo
+   # or use wget
+   # sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/AtlasGondal/centos7-eol-repo-fix/main/CentOS-Base.repo
    ```
 
 #### Step 3: Clean YUM Cache
