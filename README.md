@@ -6,15 +6,11 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
 
 #### Step 1: Backup Existing Repo Files
 
-1. **Backup Existing Repo Files:**
-
    ```bash
    sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
    ```
 
 #### Step 2: Download the Updated Repository File
-
-2. **Download the Updated Repository File:**
 
    ```bash
    # use curl
@@ -25,8 +21,6 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
 
 #### Step 3: Clean YUM Cache
 
-3. **Clean YUM Cache:**
-
    Clear the YUM cache to ensure it fetches the latest repository metadata:
 
    ```bash
@@ -35,8 +29,6 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
    ```
 
 #### Step 4: Update Your System
-
-4. **Update Your System:**
 
    Now try updating your system:
 
@@ -48,15 +40,11 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
 
 #### Step 1: Backup Existing Repo Files
 
-1. **Backup Existing Repo Files:**
-
    ```bash
    sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
    ```
 
 #### Step 2: Edit the Repository File
-
-2. **Edit the Repository File:**
 
    Open the repository file with a text editor:
 
@@ -65,8 +53,6 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
    ```
 
 #### Step 3: Update the `baseurl`
-
-3. **Update the `baseurl`:**
 
    Replace the `baseurl` entries with the following vault URLs:
 
@@ -94,8 +80,6 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
 
 #### Step 4: Clean YUM Cache
 
-4. **Clean YUM Cache:**
-
    Clear the YUM cache to ensure it fetches the latest repository metadata:
 
    ```bash
@@ -104,8 +88,6 @@ CentOS 7 has reached its End of Life (EOL), which means its repositories may no 
    ```
 
 #### Step 5: Update Your System
-
-5. **Update Your System:**
 
    Now try updating your system:
 
